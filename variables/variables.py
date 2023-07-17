@@ -26,12 +26,12 @@ n_subdomains_z = 1
 tendon_material = "nonLinear"
 #tendon_material = "linear"
 
-tendon_extent = [3.0, 3.0, 2.96] # [cm, cm, cm] 2.96
+tendon_extent = [3.0, 3.0, 1.48] # [cm, cm, cm] 2.96
 tendon_offset = [0.0, 0.0, 0.0]
-n_elements_tendon = [4,4, 4] 
+n_elements_tendon = [8,8, 4] 
 
-muscle_right_extent = [3.0, 3.0, 14.8] # [cm, cm, cm]
-muscle_right_offset = [0.0, 0.0, tendon_offset[2]]
+muscle_extent = [3.0, 3.0, 7.4] # [cm, cm, cm]
+muscle_right_offset = [0.0, 0.0, tendon_extent[2]]
 
 n_elements_muscle = [8, 8, 20] # linear elements. each qudaratic element uses the combined nodes of 8 linear elements
 n_points_whole_fiber = 60

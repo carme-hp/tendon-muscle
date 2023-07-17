@@ -87,8 +87,8 @@ muscle_meshes = {
 
   "muscle2Mesh": {
     "nElements" :         variables.n_elements_muscle,
-    "physicalExtent":     variables.muscle_right_extent,
-    "physicalOffset":     [0,0,0],
+    "physicalExtent":     variables.muscle_extent,
+    "physicalOffset":     variables.muscle_right_offset,
     "logKey":             "muscle2",
     "inputMeshIsGlobal":  True,
     "nRanks":             n_ranks
@@ -97,8 +97,8 @@ muscle_meshes = {
   # needed for mechanics solver
   "muscle2Mesh_quadratic": {
     "nElements" :         [elems // 2 for elems in variables.n_elements_muscle],
-    "physicalExtent":     variables.muscle_right_extent,
-    "physicalOffset":     [0,0,0],
+    "physicalExtent":     variables.muscle_extent,
+    "physicalOffset":     variables.muscle_right_offset,
     "logKey":             "muscle2_quadratic",
     "inputMeshIsGlobal":  True,
     "nRanks":             n_ranks,

@@ -72,7 +72,7 @@
 
       <relative-convergence-measure limit="1e-5" data="Displacement" mesh="MuscleMeshLeft" strict="0"/>
       <relative-convergence-measure limit="1e-5" data="Velocity" mesh="MuscleMeshLeft" strict="0"/>
-      <absolute-convergence-measure limit="1e-2" data="Traction" mesh="TendonMeshLeft" strict="0"/>
+      <absolute-convergence-measure limit="1e-3" data="Traction" mesh="TendonMeshLeft" strict="0"/>
 
 
     </coupling-scheme:parallel-implicit>
